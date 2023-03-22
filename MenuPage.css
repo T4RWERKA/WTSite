@@ -1,0 +1,241 @@
+body {
+    display: flex;
+    flex-flow: column;
+    margin: 0px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.MainNav {
+    font-family: 'Yeseva One';
+    display: flex;
+    justify-content: center;
+    background-color: #292E49;
+    height: 7vh;
+    flex-flow: row;
+}
+
+.CafeName {
+    flex: 1;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    margin-left: 0%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 3vh;
+}
+
+.NavigativBar {
+    flex: 3;
+    font-family: 'Gentium Book Basic', serif;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.Home:hover {
+    cursor: pointer;
+    border-top: 3px solid #9CA092;
+}
+
+.Home {
+    font-size: 100%;
+    background: none;
+    border: none;
+    color: #9CA092;
+}
+
+.Menu:hover {
+    cursor: pointer;
+    border-top: 3px solid white;
+}
+
+.Menu {
+    font-size: 100%;
+    background: none;
+    border: none;
+    color: white;
+
+}
+
+.Booking:hover {
+    cursor: pointer;
+    border-top: 3px solid #9CA092;
+}
+
+.Booking {
+    font-size: 100%;
+    background: none;
+    border: none;
+    color: #9CA092;
+}
+
+/*///////////////////////////////////////////////////////////*/
+
+.MainMenu {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    min-width: 150px;
+}
+
+.Sector {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    min-width: 300px;
+    height: fit-content;
+    align-self: baseline;
+    margin-bottom: 10px;
+}
+
+.SectorName {
+
+    text-align: center;
+    font-size: 2vw;
+    color: #cc9900;
+}
+
+.Decor {
+
+    width: 50%;
+}
+
+.dish {
+    display: flex;
+    margin-top: 2vw;
+    flex-flow: row wrap;
+    width: 80%;
+    max-width: 40vw;
+}
+
+.NP {
+    font-family: 'Yeseva One', cursive;
+    display: flex;
+    font-size: 1.5vw;
+    color: #cc9900;
+    width: 100%;
+}
+
+.Price{
+      
+    width: 50%;
+    text-align: right;
+
+}
+
+.Name{
+    text-align: left;      
+    width: 50%;
+}
+
+.Resipe {
+    border-top: 2px solid #cc9900;
+    margin-top: 1vw;
+    font-size: 1.3vw;
+    color: white;
+    width: 100%;
+}
+
+/*///////////////////////////////////////////////////////////*/
+
+.information {
+    display: flex;
+    height: 20vw;
+    background-color: black;
+    color: white;
+    
+}
+
+.Location {
+    font-size: 1.5vw;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.openignHour {
+    font-size: 1.5vw;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.decor2 {
+    width: 40%;
+}
+
+@media (max-width: 480px) {
+    .information {
+        height: 40vw;
+    }
+
+    .decor2 {
+        width: 60%;
+
+    }
+
+    .dish{
+        margin-top: 2vw;
+        max-width: none;
+    }
+
+    .SectorName {
+        font-size: 5vw;
+    }
+
+    .Sector {
+        margin: 1vw;
+    }
+
+    .NP {
+        font-size: 4vw;
+        
+    }
+
+  
+    .Decor {
+        width: 50%;
+    }
+
+    .Resipe {
+        border-top: 1px solid #cc9900;
+        margin-top: 2vw;
+        font-size: 3vw;
+    }
+
+    .Location {
+        font-size: 3vw;
+    }
+
+    .openignHour {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 1080px) {
+    .Resipe {
+        border-top: 1px solid #cc9900;
+        
+    }
+}
+@media(max-height: 400px)
+{
+    .MainNav{
+        height:15vh;
+    }
+
+    .CafeName{
+        font-size: 4vw;
+    }
+}

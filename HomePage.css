@@ -1,0 +1,211 @@
+body {
+    display: flex;
+    flex-flow: column;
+    margin: 0px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.MainNav {
+    font-family: 'Yeseva One';
+    display: flex;
+    justify-content: center;
+    background-color: #292E49;
+    height: 7vh;
+    flex-flow: row;
+}
+
+
+.CafeName {
+    flex: 1;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    margin-left: 0%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 3vh;
+}
+
+.NavigativBar {
+    flex: 3;
+    font-family: 'Gentium Book Basic', serif;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.Home:hover {
+    cursor: pointer;
+    border-top: 3px solid white;
+}
+
+.Home {
+    font-size: 100%;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.Menu:hover {
+    cursor: pointer;
+    border-top: 3px solid #9CA092;
+}
+
+.Menu {
+    font-size: 100%;
+    background: none;
+    border: none;
+    color: #9CA092;
+}
+
+.Booking:hover {
+    cursor: pointer;
+    border-top: 3px solid #9CA092;
+}
+
+.Booking {
+    font-size: 100%;
+    background: none;
+    border: none;
+    color: #9CA092;
+}
+
+@media(max-height: 400px)
+{
+    .MainNav{
+        height:15vh;
+    }
+
+    .CafeName{
+        font-size: 4vw;
+    }
+}
+
+.MainSection {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    height: 50vw;
+    min-height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Navigation {
+    min-width: 400px;
+    min-height: 30px;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.Text {
+    color: white;
+    display: flex;
+    font-size: 7vw;
+}
+
+.itemDec1 {
+    display: flex;
+    min-width: 300px;
+    width: 30%;
+    justify-content: center;
+}
+
+.decor1 {
+    display: flex;
+    width: 50%;
+}
+
+.seeMenu {
+    min-width: 150px;
+    min-height: 50px;
+    width: 13vw;
+    height: 4vw;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    border: solid 1px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.56);
+}
+
+.seeMenu:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.seeBooking {
+    min-width: 150px;
+    min-height: 50px;
+    width: 13vw;
+    color: white;
+    height: 4vw;
+    border: solid 1px white;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(255, 255, 255, 0.196);
+}
+
+.seeBooking:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.information {
+    display: flex;
+    height: 20vw;
+    background-color: black;
+    color: white;
+}
+
+.Location {
+    font-size: 1.5vw;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.openignHour {
+    font-size: 1.5vw;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.decor {
+    width: 40%;
+}
+
+@media (max-width: 480px) {
+    .Text {
+        font-size: 9vw;
+    }
+
+    .decor {
+        width: 60%;
+
+    }
+
+    .information {
+        height: 40vw;
+    }
+
+    .Location {
+        font-size: 3vw;
+    }
+
+    .openignHour {
+        font-size: 3vw;
+    }
+}
