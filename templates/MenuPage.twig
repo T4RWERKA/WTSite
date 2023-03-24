@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include 'head.twig' with {'title': 'CafeMenu', 'styleHref': 'styles/MenuPage.css'} %}
+</head>
+
+<body>
+    <nav class="MainNav">
+        <header class="CafeName">
+            Lambda
+        </header>
+
+        <div class="NavigationBar">
+            <button onclick="document.location='?page=home'" class="Home" type="button" name="Home">
+                Home
+            </button>
+
+            <button class="Menu" type="button" name="Menu">
+                Menu
+            </button>
+            <button onclick="document.location='?page=booking'" class="Booking" type="button" name="Reservation">
+                Booking
+            </button>
+        </div>
+    </nav>
+
+    <article class="MainMenu">
+        {% include 'FoodSector.twig' with {'sectorName': 'Appetisers', 'dishes': [
+            {'name': 'Tzatsiki', 'price': '3.99', 'recipe': 'Refresing tradition cucumbers and garlic yoghurt dip.'},
+            {'name': 'Aubergine Salad', 'price': '5.50', 'recipe': 'Pureed eggplant, garlic, green pepper and tomato dip'},
+            {'name': 'Courgette Salad', 'price': '5.25', 'recipe': 'Pureed courgette, garlic, red pepper and tomato dip'}
+        ]}
+        %}
+
+        {% include 'FoodSector.twig' with {'sectorName': 'Starters', 'dishes': [
+            {'name': 'Haloumi', 'price': '$3.99', 'recipe': 'Refreshing traditional cucumbers and garlic yoghurt dip.'},
+            {'name': 'Spinach Pie', 'price': '$5.50', 'recipe': 'Pureed eggplant, garlic, green pepper and tomato dip'},
+        ]}
+        %}
+
+        {% include 'FoodSector.twig' with {'sectorName': 'Salads', 'dishes': [
+            { 'name': 'Olive Special', 'price': '$5.99', 'recipe': 'Refresing tradition cucumbers and garlic yoghurt dip.' },
+            { 'name': 'Greek Salad', 'price': '$5.50', 'recipe': 'Pureed eggplant, garlic, green pepper and tomato dip' },
+            { 'name': 'Gusto Salad', 'price': '$5.25', 'recipe': 'Pureed courgette, garlic, red pepper and tomato dip' }
+        ]}
+        %}
+
+        {% include 'FoodSector.twig' with {'sectorName': 'Main Dishes', 'dishes': [
+            {'name': 'Cornish Mackerel', 'price': '$5.99', 'recipe': 'Refresing tradition cucumbers and garlic yoghurt dip.'},
+            {'name': 'Roast Lamb', 'price': '$5.50', 'recipe': 'Pureed eggplant, garlic, green pepper and tomato dip'},
+            {'name': 'Gusto Salad', 'price': '$5.25', 'recipe': 'Pureed courgette, garlic, red pepper and tomato dip'},
+            {'name': 'Pastitsio', 'price': '$5.99', 'recipe': 'Refresing tradition cucumbers and garlic yoghurt dip.'}
+        ]}
+        %}
+    </article>
+
+    <footer>
+        {% include 'footer.twig' %}
+    </footer>
+
+</body>

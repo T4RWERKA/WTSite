@@ -1,0 +1,7 @@
+<div class="Sector">
+    <p class="SectorName">{{ sectorName }}</p>
+    <img class="Decor" src="Images/GoldThing.png" alt="">
+    {% for dish in dishes %}
+        {% include 'Dish.twig' with {'name': dish.name, 'price': dish.price, 'recipe': dish.recipe} %}
+    {% endfor %}
+</div>

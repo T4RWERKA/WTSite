@@ -28,7 +28,7 @@ body {
     font-size: 3vh;
 }
 
-.NavigativBar {
+.NavigationBar {
     flex: 3;
     font-family: 'Gentium Book Basic', serif;
     display: flex;
@@ -133,7 +133,7 @@ body {
     width: 50%;
 }
 
-.Resipe {
+.Recipe {
     border-top: 2px solid #cc9900;
     margin-top: 1vw;
     font-size: 1.3vw;
@@ -161,7 +161,7 @@ body {
     justify-content: center;
 }
 
-.openignHour {
+.openingHour {
     font-size: 1.5vw;
     text-align: center;
     align-items: center;
@@ -208,7 +208,7 @@ body {
         width: 50%;
     }
 
-    .Resipe {
+    .Recipe {
         border-top: 1px solid #cc9900;
         margin-top: 2vw;
         font-size: 3vw;
@@ -218,13 +218,13 @@ body {
         font-size: 3vw;
     }
 
-    .openignHour {
+    .openingHour {
         font-size: 3vw;
     }
 }
 
 @media (max-width: 1080px) {
-    .Resipe {
+    .Recipe {
         border-top: 1px solid #cc9900;
         
     }

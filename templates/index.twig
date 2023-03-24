@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include 'head.twig' with {'title': 'Cafe', 'styleHref': 'styles/HomePage.css'} %}
+</head>
+
+<body>
+<nav class="MainNav">
+    <header class="CafeName">
+        Lambda
+    </header>
+
+    <div class="NavigationBar">
+        <button class="Home" type="button" name="Home">
+            Home
+        </button>
+
+        <button onclick="document.location='?page=menu'" class="Menu" type="button" name="Menu">
+            Menu
+        </button>
+        <button onclick="document.location='?page=booking'" class="Booking" type="button" name="Reservation">
+            Booking
+        </button>
+    </div>
+</nav>
+
+
+<section class="MainSection">
+    <h1 class="Text">
+        the right ingredients<br>
+        for the right food
+    </h1>
+    <div class="itemDec1">
+        <img class="decor1" src="Images/WhiteThing.png" alt="">
+    </div>
+    <nav class="Navigation">
+        <button onclick="document.location='?page=menu'" class="seeMenu">
+            SEE MENU
+        </button>
+
+        <button onclick="document.location='?page=booking'" class="seeBooking">
+            BOOK A TABLE
+        </button>
+
+
+    </nav>
+</section>
+
+<footer>
+    {% include 'footer.twig' %}
+</footer>
+
+</body>
